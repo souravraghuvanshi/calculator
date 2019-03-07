@@ -1,6 +1,6 @@
 package calculator;
 import java.util.*;
-public class calculator {
+public class  {
 	public static void main(String[] args) {
 
     	double num1, num2;
@@ -11,7 +11,7 @@ public class calculator {
         System.out.print("Enter second number:");
         num2 = scanner.nextDouble();
 
-        System.out.print("Enter an operator (+,-): ");
+        System.out.print("Enter an operator (+,-,/): ");
         char operator = scanner.next().charAt(0);
 
         scanner.close();
@@ -25,6 +25,10 @@ public class calculator {
 
             case '-':
             	output = num1 - num2;
+                break;
+                
+            case '/':
+            	output = num1 / num2;
                 break;
                 
             default:
